@@ -4,7 +4,7 @@ Thanks for helping build Refella.
 
 ## Propose a change
 
-Open an issue describing the customer or business problem, the proposed change, and how success can be checked. For implementation work, identify the relevant item in the [roadmap](docs/ROADMAP.md).
+Open an issue describing the customer or business problem, the proposed change, and how success can be checked. For implementation work, identify the relevant item in the [roadmap](architecture/ROADMAP.md).
 
 ## Submit a pull request
 

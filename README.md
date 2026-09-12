@@ -1,12 +1,12 @@
 <div align="center">
 
-<img src="docs/assets/refella-banner.svg" width="100%" alt="Refella — the assistant that actually brings customers back. A familiar chat that remembers the customer." />
+<img src="architecture/assets/refella-banner.svg" width="100%" alt="Refella — the assistant that actually brings customers back. A familiar chat that remembers the customer." />
 
 # Refella
 
 **An AI loyalty and referral manager that helps businesses bring customers back<br />and turn recommendations into sales—all through messaging apps.**
 
-[The experience](#one-conversation-the-whole-relationship) · [Referrals](#good-things-get-shared) · [Technical overview](docs/ARCHITECTURE.md) · [Design system](docs/DESIGN.md)
+[The experience](#one-conversation-the-whole-relationship) · [Referrals](#good-things-get-shared) · [Technical overview](architecture/ARCHITECTURE.md) · [Design system](architecture/DESIGN.md)
 
 **WhatsApp · iMessage · Telegram · Instagram**<br />
 <sub>Product channel vision. Availability depends on supported business integrations.</sub>
@@ -27,7 +27,7 @@ Built for businesses of all sizes, across industries. Restaurants, cafés, retai
 
 ## Three connected capabilities. One conversation.
 
-<img src="docs/assets/refella-capabilities.svg" width="100%" alt="Engage: answer questions and offer help. Retain: remember preferences and manage loyalty. Grow: make referrals easy and reward verified outcomes." />
+<img src="architecture/assets/refella-capabilities.svg" width="100%" alt="Engage: answer questions and offer help. Retain: remember preferences and manage loyalty. Grow: make referrals easy and reward verified outcomes." />
 
 | Capability | What it brings to the conversation |
 | :--- | :--- |
@@ -68,7 +68,7 @@ A standalone chat can answer a question. Refella is designed to connect the answ
 
 For the customer, that means less repetition and fewer steps. For the business, it means a visible connection between conversations, repeat business, and referrals.
 
-[Explore the complete customer journey →](docs/PRODUCT.md)
+[Explore the complete customer journey →](architecture/PRODUCT.md)
 
 ## Inside the project
 
@@ -80,7 +80,7 @@ For the customer, that means less repetition and fewer steps. For the business, 
 | **Agent architecture** | Proposed channel adapters, conversation orchestration, approved information, business integrations, and a reward ledger. |
 | **Execution status** | The supplied frontend is a marketing experience. Its scripts do not establish a functioning AI agent or connected booking/payment backend. |
 
-[Architecture and implementation boundaries →](docs/ARCHITECTURE.md) · [Landing-page source guide →](docs/LANDING-PAGE.md)
+[Architecture and implementation boundaries →](architecture/ARCHITECTURE.md) · [Landing-page source guide →](architecture/LANDING-PAGE.md)
 
 ## Meet the team
 
@@ -91,15 +91,22 @@ For the customer, that means less repetition and fewer steps. For the business, 
 
 *Responsibilities supplied by the team; backend implementation is not yet available in this repository for review.*
 
+## Repository structure
+
+| Folder | Contents |
+| :--- | :--- |
+| [`architecture/`](architecture/) | Product, technical architecture, design system and roadmap documents |
+| [`landing-page/`](landing-page/) | The Next.js landing page — `cd landing-page && npm install && npm run dev` |
+
 ## Take a closer look
 
 | Guide | Start here for… |
 | :--- | :--- |
-| [Product walkthrough](docs/PRODUCT.md) | Customer flows and a three-minute demo outline |
-| [Technical architecture](docs/ARCHITECTURE.md) | The frontend reviewed and the agent design proposed |
-| [Landing-page guide](docs/LANDING-PAGE.md) | Source structure, configuration, and setup reference |
-| [Design system](docs/DESIGN.md) | The visual identity shared with the landing page |
-| [Roadmap](docs/ROADMAP.md) | The next implementation milestones |
+| [Product walkthrough](architecture/PRODUCT.md) | Customer flows and a three-minute demo outline |
+| [Technical architecture](architecture/ARCHITECTURE.md) | The frontend reviewed and the agent design proposed |
+| [Landing-page guide](architecture/LANDING-PAGE.md) | Source structure, configuration, and setup reference |
+| [Design system](architecture/DESIGN.md) | The visual identity shared with the landing page |
+| [Roadmap](architecture/ROADMAP.md) | The next implementation milestones |
 | [Contributing](CONTRIBUTING.md) | Proposing focused changes |
 
 ---
