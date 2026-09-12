@@ -36,7 +36,7 @@ export const en = {
       { k: "divider", from: "", text: "After the visit", act: 2 },
       { k: "msg", from: "business", text: "Glad you loved it! Give a friend 15% off their first dinner and earn credit toward yours?", act: 2 },
       { k: "msg", from: "customer", text: "Yes, send it", act: 2 },
-      { k: "link", from: "business", text: "refella.chat/aisha", act: 2 },
+      { k: "link", from: "business", text: "refella.app/r/aisha", act: 2 },
       { k: "divider", from: "", text: "2 days later", act: 2 },
       { k: "msg", from: "business", text: "Dana booked Saturday from your link 🎉 ₸6,200 credit is on your account.", act: 2 },
     ],
@@ -245,7 +245,7 @@ export const en = {
       { from: "customer", text: "Yes, send it" },
       {
         from: "business",
-        text: "Here's your link — just forward it 👇 refella.chat/aisha",
+        text: "Here's your link — just forward it 👇 refella.app/r/aisha",
       },
     ],
   },
@@ -386,7 +386,7 @@ export const en = {
         { from: "business", text: "Give a friend 15% off their first visit and earn credit toward your next one?" },
         { from: "customer", text: "Send it 👍" },
       ],
-      linkLabel: "refella.chat/maya",
+      linkLabel: "refella.app/r/maya",
       linkCaption: "Ready to forward · one tap",
       rows: [
         { name: "Dana", state: "Booked Saturday", done: false },

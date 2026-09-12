@@ -38,7 +38,7 @@ export const ru: Dictionary = {
       { k: "divider", from: "", text: "После визита", act: 2 },
       { k: "msg", from: "business", text: "Рады, что понравилось! Подарить подруге 15% на первый ужин и получить бонус себе?", act: 2 },
       { k: "msg", from: "customer", text: "Да, отправьте", act: 2 },
-      { k: "link", from: "business", text: "refella.chat/aisha", act: 2 },
+      { k: "link", from: "business", text: "refella.app/r/aisha", act: 2 },
       { k: "divider", from: "", text: "Через 2 дня", act: 2 },
       { k: "msg", from: "business", text: "Дана записалась на субботу по вашей ссылке 🎉 ₸6 200 бонуса уже на счёте.", act: 2 },
     ],
@@ -247,7 +247,7 @@ export const ru: Dictionary = {
       { from: "customer", text: "Да, отправьте" },
       {
         from: "business",
-        text: "Вот ваша ссылка — просто перешлите 👇 refella.chat/aisha",
+        text: "Вот ваша ссылка — просто перешлите 👇 refella.app/r/aisha",
       },
     ],
   },
@@ -387,7 +387,7 @@ export const ru: Dictionary = {
         { from: "business", text: "Подарить другу 15% на первый визит и получить бонус на следующий свой?" },
         { from: "customer", text: "Отправляйте 👍" },
       ],
-      linkLabel: "refella.chat/maya",
+      linkLabel: "refella.app/r/maya",
       linkCaption: "Готово к пересылке · одно касание",
       rows: [
         { name: "Дана", state: "Записана на субботу", done: false },

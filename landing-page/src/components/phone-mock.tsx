@@ -81,7 +81,7 @@ export function PhoneMock({ t }: { t: Dictionary }) {
               }
               if (step.k === "link") {
                 return (
-                  <LinkCard key={index} title={step.text} caption="refella.com" />
+                  <LinkCard key={index} title={step.text} caption="refella.app" />
                 );
               }
               return (
