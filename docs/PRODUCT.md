@@ -2,7 +2,7 @@
 
 [← Back to Refella](../README.md)
 
-> Product specification and illustrative demo script. These flows are planned, not implemented.
+> Product specification and illustrative demo script. The supplied landing page demonstrates conversations with predefined scripts; the transactional agent flows below remain unverified in this repository.
 
 ## The idea in 30 seconds
 
@@ -10,7 +10,7 @@ Refella helps businesses engage customers, reward repeat business, and convert r
 
 The buyer is the business. The end user is its customer. The product is intended to work across business sizes and sectors, with industry-specific booking, commerce, and payment integrations.
 
-## One connected journey
+## One conversation. The whole relationship.
 
 | Stage | Customer action | Business outcome |
 | --- | --- | --- |

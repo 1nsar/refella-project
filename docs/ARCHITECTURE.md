@@ -1,10 +1,18 @@
-# Proposed architecture
+# Technical architecture
 
 [← Back to Refella](../README.md)
 
-> Design proposal. No framework, model provider, database, or messaging integration has been implemented in this repository.
+## Frontend reviewed
 
-## System overview
+The supplied landing-page source uses **Next.js 16.3.5, React 19.2.8, TypeScript 5, and Tailwind CSS 4**. It includes English/Russian routing, responsive components, scripted chat sequences, and WhatsApp contact links. See the [source guide](LANDING-PAGE.md) for the inspected files and setup reference.
+
+The frontend source has not been imported into this documentation repository. Its chat sequences are predefined presentation scripts. Model calls, channel webhooks, a database, and live booking/payment integrations were not established by the supplied frontend.
+
+## Agent architecture, proposed
+
+The system below describes the intended backend. The team's backend implementation has not yet been supplied here for review.
+
+### System overview
 
 ```mermaid
 flowchart TD
@@ -59,4 +67,4 @@ flowchart TD
 
 Begin with one channel and one conversion flow. Use a clearly labeled simulated booking or payment adapter until a real integration is available. Preserve the same internal event contract so a real provider can replace the simulator without rewriting loyalty logic.
 
-The technology stack should follow the actual implementation. Add concrete setup and deployment instructions once that stack is committed.
+Document the actual backend stack, configuration, and verified integration behavior when its code is added. Keep frontend demonstrations distinct from provider-connected actions.

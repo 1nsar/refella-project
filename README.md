@@ -1,95 +1,112 @@
 <div align="center">
 
-<img src="docs/assets/refella-banner.svg" alt="Refella — Engage. Retain. Grow." width="100%" />
+<img src="docs/assets/refella-banner.svg" width="100%" alt="Refella — the assistant that actually brings customers back. A familiar chat that remembers the customer." />
 
 # Refella
-### Turn conversations into loyalty. Turn recommendations into growth.
 
-An AI loyalty and referral manager that helps businesses bring customers back<br />
-and turn recommendations into sales—all through messaging apps.
+**An AI loyalty and referral manager that helps businesses bring customers back<br />and turn recommendations into sales—all through messaging apps.**
 
-**Engage · Retain · Grow**
+[The experience](#one-conversation-the-whole-relationship) · [Referrals](#good-things-get-shared) · [Technical overview](docs/ARCHITECTURE.md) · [Design system](docs/DESIGN.md)
 
-[Product walkthrough](docs/PRODUCT.md) · [Architecture](docs/ARCHITECTURE.md) · [Roadmap](docs/ROADMAP.md)
+**WhatsApp · iMessage · Telegram · Instagram**<br />
+<sub>Product channel vision. Availability depends on supported business integrations.</sub>
 
 </div>
 
----
+<br />
 
-## Why Refella?
+## Your next regular is already in a chat.
 
-A happy customer recommends a business. Their friend has questions. The conversation stalls—and the sale never happens.
+Customers should be able to ask a question, return for a favorite experience, or recommend a business without installing another app. Businesses should be able to connect those moments to loyalty and sales.
 
-Meanwhile, loyalty programs ask customers to download another app, remember another password, or carry another card.
+**Refella brings the relationship together:** conversations, preferences, rewards, and introductions—all around one customer profile.
 
-**Refella brings customer conversations, loyalty, and referrals together in the messaging apps people already use.** Businesses get a connected way to build relationships; customers get a familiar chat.
+Built for businesses of all sizes, across industries. Restaurants, cafés, retailers, salons, and service providers are a few examples.
 
-> **Project status:** Product concept and proposed architecture. This repository currently contains documentation; application code, working integrations, and a live demo have not yet been added. All capabilities below describe the intended product.
+> **Build status:** A landing-page implementation has been supplied and reviewed: Next.js, React, TypeScript, and Tailwind CSS, with English/Russian content and scripted chat demonstrations. This repository currently houses the project presentation and documentation. Agent backend code, working channel integrations, and a verified live demo have not been added here. The visuals illustrate the intended experience.
 
-## Three capabilities. One customer relationship.
+## Three connected capabilities. One conversation.
 
-| Engage | Retain | Grow |
-| :--- | :--- | :--- |
-| Answer questions using approved business information | Track loyalty benefits and qualifying activity | Generate personal referral links and ready-to-forward messages |
-| Collect private feedback and capture preferences | Explain and redeem available rewards | Welcome referred customers and help them book or buy |
-| Support bookings and purchases; hand off to staff | Send relevant, permission-based offers | Verify completed transactions and issue referral rewards |
+<img src="docs/assets/refella-capabilities.svg" width="100%" alt="Engage: answer questions and offer help. Retain: remember preferences and manage loyalty. Grow: make referrals easy and reward verified outcomes." />
 
-Designed for businesses of all sizes, across industries. Restaurants, retailers, salons, and service providers are examples—not the boundary.
-
-**Channel vision:** WhatsApp, Telegram, Instagram messaging, and Apple messaging experiences where supported. Each channel requires its own supported business integration, permissions, and capability checks; equivalent functionality is not assumed.
-
-## From “Maya recommended you” to “I booked”
-
-1. **Ask at the right moment.** After a positive customer experience: “Give a friend 15% off their first visit, and get credit toward your next one.”
-2. **Make sharing effortless.** Maya receives a short message with her personal referral link to forward.
-3. **Welcome the friend.** The friend follows the invitation and starts a chat: “Maya recommended you. Do you have appointments this Saturday?”
-4. **Help them decide.** The assistant answers questions, checks connected availability, and helps with booking—or brings in a staff member.
-5. **Reward the outcome.** After the qualifying visit is verified, Maya receives credit and the business sees the attributed revenue.
-
-*Illustrative offer and conversation; not a recording of a running integration.*
-
-**The value is closing the gap between a recommendation and a completed purchase.**
-
-## Loyalty that lives in a conversation
-
-| Customer says… | Intended Refella experience |
+| Capability | What it brings to the conversation |
 | :--- | :--- |
-| “Can I join your rewards program?” | Start a profile using their name and available channel identity; explain enrollment and messaging choices |
-| “Loved the food, but service was slow.” | Capture private feedback and route a service issue to the manager |
-| “Do I have any rewards?” | Show verified benefits and redemption options |
-| “Any breakfast offers?” | Share current, relevant offers from the business |
-| “Can I tip Sara?” | Provide a supported payment flow associated with the right staff member |
-| “Please stop promotional messages.” | Update their messaging preference and stop promotional outreach |
+| **Engage** | Answers from approved business information, private feedback, booking or order assistance, staff tipping through a payment flow, and human handoff. |
+| **Retain** | Loyalty balances, customer preferences, relevant opted-in offers, and reasons to visit or buy again. |
+| **Grow** | Ready-to-forward invitations, personal referral links, help for referred customers, and rewards after qualifying transactions. |
 
-No additional customer app required. Booking, checkout, and tipping may use secure external links where needed.
+## One conversation. The whole relationship.
 
-## Explore the project
+**Today — make it easy.**<br />
+Aisha asks for a table for two. Refella checks connected availability and helps her choose the terrace she enjoyed last time.
 
-| Guide | What you will find |
+**Three weeks later — make it personal.**<br />
+With permission, Refella shares a relevant breakfast offer and lets Aisha know she is one visit away from a loyalty reward.
+
+**After a great visit — make it shareable.**<br />
+Aisha receives an invitation she can forward to Dana. Dana starts a conversation, gets answers, and books. After the qualifying visit is verified, Aisha earns credit.
+
+*Illustrative restaurant scenario. The same workflow can support purchases, appointments, and other qualifying business activities.*
+
+## Good things get shared.
+
+The value is closing the gap between **“my friend recommended you”** and **“I booked.”**
+
+| Step | How Refella helps |
 | :--- | :--- |
-| [Product walkthrough](docs/PRODUCT.md) | Customer journey, business value, and a suggested hackathon demo |
-| [Proposed architecture](docs/ARCHITECTURE.md) | Channel adapters, conversation orchestration, integrations, and reward verification |
-| [Implementation roadmap](docs/ROADMAP.md) | A focused first build, acceptance criteria, and future expansion |
-| [Contributing](CONTRIBUTING.md) | How to propose changes and keep documentation accurate |
+| **01 · Ask at the right moment** | “Give a friend 15% off their first visit, and get credit toward your next one.” |
+| **02 · Make sharing easy** | Give the customer a short, ready-to-forward message with a personal referral link. |
+| **03 · Welcome the friend** | Preserve the introduction when the friend opens the invitation and starts a chat. |
+| **04 · Help them decide** | Answer questions, check connected availability, and support booking or purchase, with staff handoff when needed. |
+| **05 · Reward the outcome** | Verify the qualifying transaction, issue the reward once, and record attributed revenue. |
 
-## Running the project
+The business defines the offer and qualifying rules. A link click alone does not earn a completion-based reward.
 
-There is no runnable application in this repository yet, so there are no installation commands, environment variables, or deployment steps to follow.
+## More useful because it knows the context.
 
-When the implementation is added, this section should include the actual prerequisites, setup commands, configuration template, and a reproducible demo. See the [first-build checklist](docs/ROADMAP.md#first-build-checklist).
+A standalone chat can answer a question. Refella is designed to connect the answer to the customer's preferences, the business's current information, their loyalty balance, and the next action.
 
-## What success looks like
+For the customer, that means less repetition and fewer steps. For the business, it means a visible connection between conversations, repeat business, and referrals.
 
-- **Engagement:** useful answers and successful staff handoffs.
-- **Retention:** repeat visits or purchases and redeemed loyalty benefits.
-- **Growth:** referred leads, completed referred transactions, and attributed revenue.
+[Explore the complete customer journey →](docs/PRODUCT.md)
 
-Attribution measures the transactions connected to referrals; proving incremental growth requires a comparison against a baseline.
+## Inside the project
+
+| Area | What has been reviewed or specified |
+| :--- | :--- |
+| **Landing-page stack** | Next.js 16.3.5 · React 19.2.8 · TypeScript 5 · Tailwind CSS 4, as declared in the supplied source. |
+| **Landing-page experience** | Responsive sections, English/Russian routing, scripted chat sequences, reduced-motion handling, and WhatsApp contact links. |
+| **Visual language** | Sky blue, paper backgrounds, rounded white cards, soft shadows, and blue/gray conversation bubbles. |
+| **Agent architecture** | Proposed channel adapters, conversation orchestration, approved information, business integrations, and a reward ledger. |
+| **Execution status** | The supplied frontend is a marketing experience. Its scripts do not establish a functioning AI agent or connected booking/payment backend. |
+
+[Architecture and implementation boundaries →](docs/ARCHITECTURE.md) · [Landing-page source guide →](docs/LANDING-PAGE.md)
+
+## Meet the team
+
+| Team member | Contribution |
+| :--- | :--- |
+| **Insar Tungushbayev · Member** | Idea validation, early customer traction, and the landing page designed to convert interested businesses into customers. |
+| **Yerdaulet Damir · Lead** | Backend architecture and development, and visuals for the project video. |
+
+*Responsibilities supplied by the team; backend implementation is not yet available in this repository for review.*
+
+## Take a closer look
+
+| Guide | Start here for… |
+| :--- | :--- |
+| [Product walkthrough](docs/PRODUCT.md) | Customer flows and a three-minute demo outline |
+| [Technical architecture](docs/ARCHITECTURE.md) | The frontend reviewed and the agent design proposed |
+| [Landing-page guide](docs/LANDING-PAGE.md) | Source structure, configuration, and setup reference |
+| [Design system](docs/DESIGN.md) | The visual identity shared with the landing page |
+| [Roadmap](docs/ROADMAP.md) | The next implementation milestones |
+| [Contributing](CONTRIBUTING.md) | Proposing focused changes |
 
 ---
 
 <div align="center">
 
-**Refella — customer relationships, one conversation at a time.**
+**No extra app. Just a better relationship.**<br />
+<sub>Refella · Engage · Retain · Grow</sub>
 
 </div>

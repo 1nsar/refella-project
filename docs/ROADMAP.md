@@ -4,7 +4,7 @@
 
 ## Current state
 
-The repository contains the product narrative, proposed architecture, and this roadmap. It does not yet contain application code, connected channels, or a live demo.
+The repository contains the branded project presentation, product narrative, proposed agent architecture, and this roadmap. The team's landing-page source was reviewed separately: it uses Next.js, React, TypeScript, and Tailwind with English/Russian copy and scripted conversation demos. That source and the agent backend have not yet been imported here.
 
 ## First-build checklist
 
@@ -45,10 +45,11 @@ The repository contains the product narrative, proposed architecture, and this r
 
 ## Before submitting to judges
 
-- [ ] Confirm the repository is publicly accessible.
-- [ ] Replace the documentation-only status when code is actually available.
+- [x] Confirm the repository is publicly accessible.
+- [ ] Update the repository status when the frontend and backend source are committed.
 - [ ] Put a verified demo link near the top of the README.
 - [ ] Identify which features are live, simulated, or planned.
 - [ ] Include reproducible setup instructions and safe demo data.
-- [ ] Add the actual team and hackathon details.
+- [x] Add the team's names and responsibilities.
+- [ ] Add the hackathon name and actual sponsor integrations.
 - [ ] Check the hackathon’s submission and licensing requirements.
