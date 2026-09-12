@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="docs/assets/refella-banner.svg" alt="Refella — Engage. Retain. Grow." width="100%" />
+
 # Refella
 ### Turn conversations into loyalty. Turn recommendations into growth.
 

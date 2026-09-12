@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+<title id="title">Refella</title><desc id="desc">Customer relationships, one conversation at a time. Engage, retain, grow.</desc>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#121c32"/><stop offset="1" stop-color="#243f4b"/></linearGradient></defs>
+<rect width="1200" height="360" rx="24" fill="url(#bg)"/>
+<circle cx="1100" cy="40" r="210" fill="#64dfb4" opacity=".06"/>
+<circle cx="1100" cy="40" r="140" fill="#64dfb4" opacity=".07"/>
+<rect x="66" y="57" width="48" height="42" rx="13" fill="#91f1cb"/>
+<path d="M78 94v15l16-15" fill="#91f1cb"/>
+<circle cx="81" cy="78" r="3" fill="#121c32"/><circle cx="91" cy="78" r="3" fill="#121c32"/><circle cx="101" cy="78" r="3" fill="#121c32"/>
+<text x="66" y="189" font-family="Arial,Helvetica,sans-serif" font-size="78" font-weight="700" letter-spacing="-3" fill="#fff">Refella</text>
+<text x="69" y="235" font-family="Arial,Helvetica,sans-serif" font-size="23" fill="#d2dfeb">Customer relationships, one conversation at a time.</text>
+<text x="70" y="299" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="700" letter-spacing="3" fill="#91f1cb">ENGAGE  /  RETAIN  /  GROW</text>
+<g font-family="Arial,Helvetica,sans-serif" font-size="20">
+<rect x="805" y="121" width="280" height="56" rx="18" fill="#ffffff" opacity=".1"/><text x="828" y="157" fill="#fff">“Maya recommended you.”</text>
+<rect x="865" y="195" width="260" height="56" rx="18" fill="#91f1cb"/><text x="890" y="231" fill="#121c32">Let’s get you booked.</text>
+</g></svg>
