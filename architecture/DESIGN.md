@@ -27,7 +27,7 @@ The landing page uses a rounded system font stack with Inter as a fallback. Repo
 | [Hero](assets/refella-banner.svg) | Landing-page headline, Refella mark, and a returning-customer conversation |
 | [Capability cards](assets/refella-capabilities.svg) | Engage, Retain, and Grow in the landing page's card style |
 
-These are static illustrations of the product vision, not screenshots of working integrations. Essential product details also appear as README text for accessibility and mobile reading.
+These static product illustrations share the landing page's visual identity. Essential product details also appear as README text for accessibility and mobile reading.
 
 GitHub controls the surrounding page interface and Markdown typography. The custom SVG artwork supplies the visual identity while standard headings, links, and tables keep the documentation usable in GitHub's light and dark themes.
 

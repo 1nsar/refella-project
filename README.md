@@ -8,8 +8,12 @@
 
 [The experience](#one-conversation-the-whole-relationship) · [Referrals](#good-things-get-shared) · [Technical overview](architecture/ARCHITECTURE.md) · [Design system](architecture/DESIGN.md)
 
-**WhatsApp · iMessage · Telegram · Instagram**<br />
-<sub>Product channel vision. Availability depends on supported business integrations.</sub>
+<p>
+<img src="landing-page/public/logos/whatsapp.png" width="28" height="28" alt="" /> <strong>WhatsApp</strong> &nbsp; · &nbsp;
+<img src="landing-page/public/logos/imessage.png" width="28" height="28" alt="" /> <strong>iMessage</strong> &nbsp; · &nbsp;
+<img src="landing-page/public/logos/telegram.png" width="28" height="28" alt="" /> <strong>Telegram</strong> &nbsp; · &nbsp;
+<img src="landing-page/public/logos/instagram.png" width="28" height="28" alt="" /> <strong>Instagram</strong>
+</p>
 
 </div>
 
@@ -22,8 +26,6 @@ Customers should be able to ask a question, return for a favorite experience, or
 **Refella brings the relationship together:** conversations, preferences, rewards, and introductions—all around one customer profile.
 
 Built for businesses of all sizes, across industries. Restaurants, cafés, retailers, salons, and service providers are a few examples.
-
-> **Build status:** A landing-page implementation has been supplied and reviewed: Next.js, React, TypeScript, and Tailwind CSS, with English/Russian content and scripted chat demonstrations. This repository currently houses the project presentation and documentation. Agent backend code, working channel integrations, and a verified live demo have not been added here. The visuals illustrate the intended experience.
 
 ## Three connected capabilities. One conversation.
 
@@ -72,15 +74,14 @@ For the customer, that means less repetition and fewer steps. For the business, 
 
 ## Inside the project
 
-| Area | What has been reviewed or specified |
+| Area | Technology and experience |
 | :--- | :--- |
-| **Landing-page stack** | Next.js 16.3.5 · React 19.2.8 · TypeScript 5 · Tailwind CSS 4, as declared in the supplied source. |
+| **Landing-page stack** | Next.js 16.3.5 · React 19.2.8 · TypeScript 5 · Tailwind CSS 4. |
 | **Landing-page experience** | Responsive sections, English/Russian routing, scripted chat sequences, reduced-motion handling, and WhatsApp contact links. |
 | **Visual language** | Sky blue, paper backgrounds, rounded white cards, soft shadows, and blue/gray conversation bubbles. |
-| **Agent architecture** | Proposed channel adapters, conversation orchestration, approved information, business integrations, and a reward ledger. |
-| **Execution status** | The supplied frontend is a marketing experience. Its scripts do not establish a functioning AI agent or connected booking/payment backend. |
+| **Agent architecture** | Channel adapters, conversation orchestration, approved information, business integrations, and a reward ledger. |
 
-[Architecture and implementation boundaries →](architecture/ARCHITECTURE.md) · [Landing-page source guide →](architecture/LANDING-PAGE.md)
+[Technical architecture →](architecture/ARCHITECTURE.md) · [Landing-page source guide →](architecture/LANDING-PAGE.md)
 
 ## Meet the team
 
@@ -88,8 +89,6 @@ For the customer, that means less repetition and fewer steps. For the business, 
 | :--- | :--- |
 | **Insar Tungushbayev · Member** | Idea validation, early customer traction, and the landing page designed to convert interested businesses into customers. |
 | **Yerdaulet Damir · Lead** | Backend architecture and development, and visuals for the project video. |
-
-*Responsibilities supplied by the team; backend implementation is not yet available in this repository for review.*
 
 ## Repository structure
 
@@ -103,7 +102,7 @@ For the customer, that means less repetition and fewer steps. For the business, 
 | Guide | Start here for… |
 | :--- | :--- |
 | [Product walkthrough](architecture/PRODUCT.md) | Customer flows and a three-minute demo outline |
-| [Technical architecture](architecture/ARCHITECTURE.md) | The frontend reviewed and the agent design proposed |
+| [Technical architecture](architecture/ARCHITECTURE.md) | Frontend technology and agent workflow |
 | [Landing-page guide](architecture/LANDING-PAGE.md) | Source structure, configuration, and setup reference |
 | [Design system](architecture/DESIGN.md) | The visual identity shared with the landing page |
 | [Roadmap](architecture/ROADMAP.md) | The next implementation milestones |

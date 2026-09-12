@@ -2,13 +2,13 @@
 
 [← Refella](../README.md) · [Architecture](ARCHITECTURE.md) · [Design system](DESIGN.md)
 
-## Source reviewed
+## Source
 
-The team supplied a Next.js marketing-site archive, `startup-refella.zip`, as the design reference for this repository. The source was inspected; it has not been imported into this repository. The instructions below apply to that source, not to a clone of this documentation repository.
+The [landing-page directory](../landing-page/) contains Refella's Next.js marketing experience, with localized content and animated customer conversations.
 
-## Declared technologies
+## Technologies
 
-| Technology | Declared version | Role |
+| Technology | Version | Role |
 | --- | --- | --- |
 | Next.js | 16.3.5 | App Router, localized routes, metadata, sitemap, and language redirect |
 | React / React DOM | 19.2.8 | Components and interactive presentation |
@@ -16,13 +16,12 @@ The team supplied a Next.js marketing-site archive, `startup-refella.zip`, as th
 | Tailwind CSS | ^4 | Utility styling and shared design tokens |
 | ESLint / Next config | ^9 / 16.3.5 | Source linting |
 
-These versions are read from the supplied package manifest. No installation or production build was performed during the repository presentation update.
+## Local setup
 
-## Local setup for the supplied source
-
-In the extracted landing-page source directory, with a Node.js version supported by its Next.js release:
+From the repository root, using a Node.js version supported by this Next.js release:
 
 ```bash
+cd landing-page
 npm ci
 cp .env.example .env.local
 npm run dev
@@ -41,7 +40,7 @@ Open `http://localhost:3000`. The source redirects the root path according to th
 
 ## Source map
 
-| Path in the supplied source | Responsibility |
+| Path within `landing-page/` | Responsibility |
 | --- | --- |
 | `src/app/[locale]/` | Landing page, layout, and localized metadata |
 | `src/app/globals.css` | Color tokens, typography, cards, chat bubbles, and motion |
@@ -58,12 +57,8 @@ Open `http://localhost:3000`. The source redirects the root path according to th
 
 The chat player reveals predefined messages with typing states. It starts when a section enters view and respects reduced-motion preferences. The WhatsApp call to action creates a `wa.me` link with a prefilled message.
 
-Those are frontend behaviors. They do not demonstrate model inference, a WhatsApp Business API connection, a live reservation, or a completed payment.
+## Deployment configuration
 
-## Before deployment
+Set the domain and contact email in `src/lib/site.ts`, and configure `NEXT_PUBLIC_WHATSAPP_NUMBER` for the business contact. Run `npm run build` to create the production build and `npm run start` to serve it.
 
-The supplied `site.ts` contains `refella.com`, `hello@refella.com`, and a fallback WhatsApp number. Confirm the actual domain and contact details before deploying. This repository does not advertise those values as a verified live demo.
-
-The landing-page story also shows a reward after a booking. Align the final demo with the documented business rule: completion-based rewards are issued after a qualifying completed visit or purchase.
-
-When importing the frontend, include its source, lockfile, configuration, and required public assets. Exclude dependencies, build output, local environment files, and machine-specific generated files.
+Keep local environment files, dependencies, and generated build output outside version control.

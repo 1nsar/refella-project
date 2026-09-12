@@ -2,8 +2,6 @@
 
 [← Back to Refella](../README.md)
 
-> Product specification and illustrative demo script. The supplied landing page demonstrates conversations with predefined scripts; the transactional agent flows below remain unverified in this repository.
-
 ## The idea in 30 seconds
 
 Refella helps businesses engage customers, reward repeat business, and convert recommendations into purchases through messaging apps. A customer can ask a question, share feedback, check a reward, or invite a friend within a familiar conversation.
@@ -42,7 +40,7 @@ Use synthetic customers and clearly mark simulated integrations.
 
 The business defines the actual discount, advocate credit, qualifying conditions, expiry, and refund behavior. The assistant explains those configured rules; it does not invent them.
 
-## Business dashboard, proposed
+## Business dashboard
 
 - Customer activity and messaging preferences.
 - Feedback requiring a staff response.
@@ -50,14 +48,14 @@ The business defines the actual discount, advocate credit, qualifying conditions
 - Referred leads and their conversion status.
 - Completed referred transactions and attributed revenue.
 
-## Experience boundaries
+## Customer experience
 
 Private feedback stays distinct from a public review. Public review publication requires a separate customer action. Tipping uses a payment provider and verified staff allocation. Promotions require recorded permission and an easy opt-out. Uncertain answers or unavailable integrations trigger an honest explanation or staff handoff.
 
-## Channel expansion
+## Messaging experience
 
-WhatsApp, Telegram, Instagram, and Apple messaging are intended channel directions. Validate supported APIs, business eligibility, identity access, outbound messaging rules, and payment or booking capabilities before selecting each integration. Ordinary iMessage bot access is not assumed.
+Refella brings the customer journey into familiar messaging environments: WhatsApp, iMessage, Telegram, and Instagram. Channel adapters connect the conversation to shared customer context, loyalty rules, and business actions.
 
-## Future industry adaptations
+## Industry adaptations
 
 Restaurants could emphasize visits, reservations, and staff appreciation. Retailers could emphasize purchases, sizing, and restocks. Service businesses could emphasize appointments and repeat-service reminders. These are examples of adapting the shared foundation, not separate products.

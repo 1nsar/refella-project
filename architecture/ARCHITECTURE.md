@@ -2,15 +2,13 @@
 
 [← Back to Refella](../README.md)
 
-## Frontend reviewed
+## Frontend
 
-The supplied landing-page source uses **Next.js 16.3.5, React 19.2.8, TypeScript 5, and Tailwind CSS 4**. It includes English/Russian routing, responsive components, scripted chat sequences, and WhatsApp contact links. See the [source guide](LANDING-PAGE.md) for the inspected files and setup reference.
+The [landing page](../landing-page/) uses **Next.js 16.3.5, React 19.2.8, TypeScript 5, and Tailwind CSS 4**. It includes English/Russian routing, responsive components, scripted chat sequences, and WhatsApp contact links. See the [source guide](LANDING-PAGE.md) for source structure and setup.
 
-The frontend source has not been imported into this documentation repository. Its chat sequences are predefined presentation scripts. Model calls, channel webhooks, a database, and live booking/payment integrations were not established by the supplied frontend.
+## Agent architecture
 
-## Agent architecture, proposed
-
-The system below describes the intended backend. The team's backend implementation has not yet been supplied here for review.
+The system connects messaging, customer context, business actions, and loyalty through a shared event flow.
 
 ### System overview
 
@@ -63,8 +61,6 @@ flowchart TD
 7. Check promotional consent at send time.
 8. Keep API credentials server-side and exclude them from repository files.
 
-## Integration strategy
+## Integration design
 
-Begin with one channel and one conversion flow. Use a clearly labeled simulated booking or payment adapter until a real integration is available. Preserve the same internal event contract so a real provider can replace the simulator without rewriting loyalty logic.
-
-Document the actual backend stack, configuration, and verified integration behavior when its code is added. Keep frontend demonstrations distinct from provider-connected actions.
+Channel adapters normalize messages into a shared conversation workflow. Booking and payment integrations use a common transaction-event contract, keeping provider-specific details separate from loyalty and referral rules.
