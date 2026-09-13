@@ -28,3 +28,8 @@ yarn-error.log*
 
 # Generated marketing media (26 MB of rendered images; regenerate locally)
 /output/
+
+# Confidential product repository — internal strategy, ICP and evidence docs.
+# Not cleared for public release; see its AGENTS.md (public export requires a
+# deliberate file allowlist and secret/data review).
+/referral-agent-main/
