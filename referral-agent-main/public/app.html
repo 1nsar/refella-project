@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Реферальные заявки — кабинет бизнеса</title>
+  <link rel="stylesheet" href="/assets/style"><script src="/assets/script" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">К содержимому</a>
+  <header class="topbar"><span class="wordmark">Реферальные заявки</span><div id="account" hidden><button id="refresh" class="quiet">Обновить</button><button id="logout" class="quiet">Выйти</button></div></header>
+  <main id="main">
+    <div id="notice" class="notice" role="status" aria-live="polite" hidden></div>
+    <section id="login-view" class="login">
+      <h1>Кабинет бизнеса</h1><p class="muted">Заявки из мессенджера, подтверждённые покупки и начисленные бонусы.</p>
+      <form id="login-form"><label for="email">Email владельца</label><input id="email" type="email" autocomplete="username" required><label for="password">Пароль</label><input id="password" type="password" autocomplete="current-password" required><button type="submit">Войти</button></form>
+      <p class="hint">Используйте аккаунт, которому предоставлен доступ к бизнесу.</p>
+    </section>
+    <section id="workspace" hidden>
+      <div class="workspace-heading"><div><label for="business">Бизнес</label><select id="business"></select></div><span id="test-mode" class="badge" hidden>Тестовый режим</span></div>
+      <section class="campaign" aria-labelledby="campaign-heading"><h1 id="campaign-heading">Реферальная программа</h1><p id="offer"></p><p id="terms" class="muted"></p></section>
+      <div class="work-grid">
+        <section class="requests" aria-labelledby="requests-heading"><div class="section-heading"><h2 id="requests-heading">Заявки</h2><span id="request-count" class="muted"></span></div><p class="hint">Желаемое время — запрос клиента, а не подтверждённая запись.</p><div id="request-list"></div></section>
+        <aside class="action-panel" aria-labelledby="action-heading"><h2 id="action-heading">Подтверждение покупки</h2><div id="selection-empty" class="muted">Выберите заявку. Покупку подтверждает сотрудник после проверки факта оплаты.</div><form id="confirm-form" hidden><p id="selected-name" class="selected-name"></p><p id="selected-service" class="muted"></p><label for="amount">Оплаченная сумма, ₸</label><input id="amount" type="text" inputmode="decimal" placeholder="Например, 5000" required aria-describedby="amount-help"><p id="amount-help" class="hint">До двух знаков после запятой. Бонус рассчитает сервер по правилам программы.</p><label class="check"><input id="payment-check" type="checkbox" required><span>Факт оплаты проверен</span></label><button id="confirm-button" type="submit">Подтвердить покупку</button><button id="cancel-request" type="button" class="danger">Отменить заявку</button><p class="hint">Подтверждение не списывает деньги с клиента.</p></form></aside>
+      </div>
+      <div class="history-grid"><section aria-labelledby="purchases-heading"><h2 id="purchases-heading">Подтверждённые покупки</h2><p class="hint">Суммы подтверждённых событий. Это не расчёт дополнительной выручки.</p><div id="purchase-list"></div></section><section aria-labelledby="rewards-heading"><h2 id="rewards-heading">Начисленные бонусы</h2><p class="hint">Бонусные единицы программы, не тенге и не выплата.</p><div id="reward-list"></div></section></div>
+    </section>
+  </main>
+</body>
+</html>

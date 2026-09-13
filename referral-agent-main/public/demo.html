@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Referral Agent — interactive demo</title><link rel="stylesheet" href="/assets/demo-style"><script defer src="/assets/demo-script"></script></head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="page-header"><strong>Referral Agent</strong><span class="demo-badge">Synthetic demo</span></header>
+<main id="main">
+  <div id="notice" role="status" aria-live="polite" hidden></div>
+  <section id="gate" class="gate"><span class="salon-mark" aria-hidden="true">S</span><h1>A recommendation from Maya.</h1><p>Explore a referral conversation with Studio Demo, a fictional salon.</p><form id="access-form"><label for="code">Judge access code</label><input id="code" type="password" autocomplete="off" required maxlength="200"><button type="submit">Open demo</button></form><p class="fine">No real appointments, payments, or rewards. This browser demonstration is not a connected WhatsApp or Instagram conversation.</p></section>
+  <div id="experience" class="experience" hidden>
+    <section class="messenger" aria-labelledby="salon-title">
+      <header class="chat-header"><span class="salon-mark" aria-hidden="true">S</span><div><h1 id="salon-title">Studio Demo</h1><p>AI referral assistant</p></div><button id="refresh" class="subtle" type="button">Refresh</button></header>
+      <div class="invitation"><span class="avatar" aria-hidden="true">M</span><p><strong>Maya invited you</strong><br><span>Ask about the salon, then request a visit.</span></p></div>
+      <div id="transcript" class="transcript" role="log" aria-label="Conversation with the AI assistant" aria-live="polite" aria-relevant="additions text"></div>
+      <section id="proposal" class="proposal" aria-labelledby="proposal-title" hidden><h2 id="proposal-title">Review your request</h2><dl><dt>Service</dt><dd id="proposal-service"></dd><dt>Preferred time</dt><dd id="proposal-time"></dd></dl><p class="fine">This sends a synthetic request. It does not reserve a time slot.</p><button id="confirm" type="button">Send demo request</button></section>
+      <div class="composer-area"><div class="suggestions" aria-label="Suggested questions"><button type="button" data-question="What services do you offer?">Explore services</button><button type="button" data-question="How does Maya's referral work?">How referrals work</button></div><form id="message-form"><label for="message" class="sr-only">Message Studio Demo</label><textarea id="message" rows="2" maxlength="800" placeholder="Ask a question or describe the visit you want…" required></textarea><button id="send" type="submit">Send</button></form><div class="composer-foot"><span id="activity" role="status" aria-live="polite"></span><span id="remaining"></span></div></div>
+    </section>
+    <aside class="journey" aria-labelledby="journey-title"><h2 id="journey-title">Behind the conversation</h2><p class="fine">This panel shows the demo server’s state. The AI cannot establish a payment.</p><ol><li class="complete"><span class="step-dot" aria-hidden="true"></span><h3>Referral source</h3><p>Maya → you</p></li><li id="request-step"><span class="step-dot" aria-hidden="true"></span><h3>Your request</h3><p id="request-status">Not sent</p><p id="request-detail" class="fine"></p></li><li id="purchase-step"><span class="step-dot" aria-hidden="true"></span><h3>Paid visit</h3><p id="purchase-status">Not simulated</p></li><li id="reward-step"><span class="step-dot" aria-hidden="true"></span><h3>Maya’s reward</h3><p id="reward-status">No reward issued</p></li></ol><div class="simulation"><h3>Try the purchase step</h3><p class="fine">After sending a request, simulate a paid visit to see the referral outcome. No money moves.</p><button id="purchase" type="button" disabled>Simulate paid visit</button></div><p class="fine limitation">Requests are not confirmed appointments. Bonus units are not cash. All people and activity here are fictional.</p></aside>
+  </div>
+</main>
+</body></html>

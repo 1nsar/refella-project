@@ -12,6 +12,8 @@
 
 ## До реализации / записи видео
 
+Implementation update 2026-09-12: started private branch codex/referral-mvp with explicit user authorization for parallel engineers. Dispatch ownership in ENGINEERING.md. Selected eve + static owner UI + Supabase and OpenRouter-compatible provider; no Next.js SSR in current workspace. Implemented booking requests, not calendar bookings. Reviewer found native Telegram inline approval auth loss; use authenticated text approval. No external deployment, hosted migration or public export performed. Live credentials/testing remain required.
+
 1. Выбрать один канал и подтвердить доступ; не ждать одновременно все интеграции.
 2. Зафиксировать рабочую ветку демо: заявка или подтверждённая запись.
 3. Получить безопасные тестовые аккаунты и согласовать synthetic campaign.

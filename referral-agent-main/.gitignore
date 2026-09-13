@@ -8,3 +8,11 @@ coverage/
 .DS_Store
 *.log
 private-assets/
+.eve/
+.workflow-data/
+.vercel/
+.output/
+.onboarding-data/
+.media/
+.referral-demo/
+runtime/.referral-demo/

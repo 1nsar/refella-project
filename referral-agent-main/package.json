@@ -1,0 +1,17 @@
+{
+  "name": "referral-agent",
+  "private": true,
+  "type": "module",
+  "workspaces": ["runtime"],
+  "scripts": {
+    "dev": "npm run dev --workspace runtime -- --no-ui",
+    "build": "npm run build --workspace runtime",
+    "start": "npm run start --workspace runtime",
+    "typecheck": "tsc --noEmit && npm run typecheck --workspace runtime",
+    "test": "vitest run",
+    "test:db": "bash tests/database/run.sh"
+  },
+  "dependencies": {"@supabase/supabase-js": "^2.57.0", "zod": "^4.0.0"},
+  "devDependencies": {"@types/node": "^24.0.0", "typescript": "^5.9.0", "vitest": "^4.1.11", "tsx": "^4.20.0"},
+  "engines": {"node": ">=24"}
+}

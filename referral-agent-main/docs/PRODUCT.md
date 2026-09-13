@@ -1,6 +1,6 @@
 # Product truth
 
-Updated 2026-09-12. Canonical. Status: product definition and demo planning; no application code in this repository at documentation handoff.
+Updated 2026-09-12. Canonical. Status: first local implementation on codex/referral-mvp; live model/messenger and hosted database migrations not verified. See EVIDENCE and RUNBOOK for exact limits.
 
 ## Формулировка пользователя
 
@@ -51,6 +51,10 @@ Updated 2026-09-12. Canonical. Status: product definition and demo planning; no 
 Пользовательская сцена: покупка кроссовок в А → предложение футболки Nike у партнёра Б. Nike здесь только пример товара, не наше партнёрство.
 
 Нужны согласованные предложения компаний, актуальные каталоги, условия комиссии, обработка возвратов и разрешённая передача минимальных данных. Два tenant в базе не образуют партнёрство и не дают права читать клиентские истории друг друга. Сценарий предполагает отдельную проверку и не включается в текущую видеодемонстрацию как готовая функция.
+
+## Browser judging demo (2026-09-12)
+
+По запросу пользователя добавлен отдельный web-вход `/demo`, чтобы судьям не требовался Telegram. Это ограниченный synthetic sandbox: предзаданное приглашение, AI-диалог, заявка с явным подтверждением и симуляция покупки/бонуса. Он не подключён к данным бизнеса и не доказывает работу production ledger. См. JUDGE-DEMO.md. Telegram остаётся отдельным каналом, английский выбран языком по умолчанию.
 
 ## Открытые решения
 
